@@ -1,0 +1,10 @@
+<div class="modal-header">
+    <button ng-if="!hideClose" type="button" class="close" data-dismiss="modal" ng-click="close()"><span class="betfont icon-close"></span></button>
+    <h4 class="modal-title" ng-bind-html="msg.title"></h4>
+</div>
+<div class="modal-body">
+    <p class="font-16" ng-model="msg.content" ng-bind-html="msg.content"></p>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn bet-btn btn-darkgrey-xs" ng-click="confirm()" translate="txtBtnComOk"></button>
+</div>
